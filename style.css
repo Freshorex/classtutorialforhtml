@@ -1,0 +1,132 @@
+body {
+    font-family: "roboto";
+    font-size: 90%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
+}
+
+main section {
+    height: 15vh;
+    text-align: center;
+    align-content: center;
+}
+
+#s3, #s17, #s20 {
+    background-color: #ff934c;
+}
+
+#s4, #s16, #s18, #s28 {
+    background-color: #51e6d6;
+}
+
+#s13, #s9, #s21, #s27 {
+    background-color: #d4dae7;
+}
+
+#s14, #s2, #s26, #s30 {
+    background-color: #ededed;
+}
+
+#s7, #s11, #s19, #s22 {
+    color: white;
+    background-color: #4c7af3;
+}
+
+#s10, #s1, #s24 {
+    color: white;
+    background-color: #041354;
+}
+
+#s5 {
+    background-image: url("IMG/gallery-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#s6 {
+    background-image: url("IMG/gallery-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#s8 {
+    background-image: url("IMG/gallery-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#s12 {
+    background-image: url("IMG/gallery-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#s15 {
+    background-image: url("IMG/gallery-5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#s23 {
+    background-image: url("IMG/gallery-6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#s25 {
+    background-image: url("IMG/gallery-7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#s29 {
+    background-image: url("IMG/gallery-8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: local("roboto"),
+    url(FNTS/Roboto-normal.ttf) format(truetype);
+}
+
+@media screen and (min-width: 900px) {
+    main {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+#s5 {
+    grid-column: 6/8;
+}
+
+#s3 {
+    grid-column: 3/5;
+}
+
+#s8 {
+    grid-row: 2/4;
+    grid-column: 2/4;
+    height: 30vh;
+}
+
+#s11 {
+    grid-column: 6/8;
+}
+
+#s14 {
+    grid-column: 4/6;
+}
+
+#s23, #s24, #s25 {
+    grid-row: 4/6;
+    height: 30vh;
+}
+
+}
